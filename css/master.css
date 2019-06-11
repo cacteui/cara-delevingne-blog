@@ -6,8 +6,6 @@
 
 
 
-
-
 /* ---------- GENERAL ---------- */
 /* Body */
 body, html {
@@ -16,20 +14,20 @@ body, html {
 
 body {
 	width: 100%;
-	margin: 0;
-	font-size: 14px;
+	font-size: 1em;
 }
 
 body p {
 	margin-bottom: 5px;
-	line-height: 2;
+	line-height: 1.5;
+    text-align: justify;
 }
 
 
 /* Header & Section */
 header {
 	width: 100%;
-	height: 50px;
+	height: 3.4em;
 	position: fixed;
 	background-color: #222222;
 	z-index: 2;
@@ -47,51 +45,46 @@ header.scroll {
     -webkit-transition: 3s opacity, 3s margin-top;
 }
 
+/* Main and Section */
+main {
+    width: 100%;
+    padding-top: 3.4em;
+    position: relative;
+}
+
+/* Headings */
 h1 {
-	width: auto;
-	text-align: left;
-	margin: 12px 12px;
+	margin: 0.5em;
 	font-family: 'font1';
-	font-size: 25px;
-	font-weight: bold;
+	font-size: 1.5em;
 	color: #ffffff;
+    font-weight: bold;
 	text-transform: uppercase;
 }
 
 h2 {
-    margin: 90px 0 30px 0;
+    margin: 1em 0;
     font-family: 'font1';
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 1.9em;
     color: #222222;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    z-index: 5;
 }
-
-section {
-	width: 100%;
-	position: relative;
-}
-
 
 /* Footer */
 footer {
+    width: 100%;
 	bottom: 0;
-	width: 100%;
-	height: 40px;
 	position: fixed;
 	background-color: #222222;
 	transition: 1s all;
-	-moz-transition: 1s all;
-	-o-transition: 1s all;
-	-webkit-transition: 1s all;
 }
 
 footer p {
-	margin-top: 12px;
+	padding: 0.5em 0 0.2em 0;
 	font-family: 'font1';
-	font-size: 15px;
+	font-size: 1em;
 	color: #ffffff;
 	font-weight: bold;
 	text-align: center;
@@ -99,11 +92,9 @@ footer p {
 }
 
 footer.scroll {
-    margin-bottom: -100px;
-    transition: 2s margin-bottom;
+    margin-bottom: -3em;
+    transition: 1s margin-bottom;
 }
-
-
 
 
 
@@ -118,31 +109,29 @@ nav {
 	opacity: 0;
 	background-color: #ffffff;
 	transition: all 1s;
-	-moz-transition: all 1s;
-	-o-transition: all 1s;
-	-webkit-transition: all 1s;
 	z-index: 3;
 }
 
 nav ul {
-	width: 99%;
-	margin-top: 100px;
+    top: 50%;
+    left: 50%;
 	position: absolute;
-	text-align: center;
+    transform: translate(-50%, -50%);
 	list-style-type: none;
 }
 
 nav ul li {
-	margin: 30px 0;
+	margin: 1em 0;
 	display: block;
 	font-family: 'font1';
-	font-size: 35px;
+	font-size: 2em;
 	font-weight: bold;
+    text-align: center;
 	text-transform: uppercase;
 }
 
 nav ul li a:link, nav li a:visited {
-	padding: 10px;
+	padding: 0.4em;
 	color: #222222;
 	text-decoration: none;
 }
@@ -156,40 +145,34 @@ nav ul li a:hover {
 nav.scroll {
     margin-top: -200px;
     transition: 1s margin-top;
-    -moz-transition: 1s margin-top;
-    -o-transition: 1s margin-top;
-    -webkit-transition: 1s margin-top;
 }
 
 .nav-toggled {
   visibility: visible;
   opacity: 1;
   transition: 1s opacity;
-  -moz-transition: 1s opacity;
-  -o-transition: 1s opacity;
-  -webkit-transition: 1s opacity;
 }
 
 /* NAVIGATION TOGGLE */
 #nav-toggle {
   position: fixed;
-  top: 13px;
-  right: 13px;
-  padding: 10px 30px 10px 0px;
-  z-index: 17;
+  top: 1em;
+  right: 1em;
+  padding: 0.5em 1.8em 0.5em 0;
+  z-index: 7;
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  height: 4px;
-  width: 30px;
-  background: #ffffff;
+  width: 1.8em;
+  height: 3px;
   position: absolute;
   display: block;
   content: '';
+  background: #ffffff;
 }
 
 #nav-toggle span:before {
-  top: -10px; 
+  top: -10px;
 }
 
 #nav-toggle span:after {
@@ -198,9 +181,6 @@ nav.scroll {
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   transition: all 500ms ease-in-out;
-  -moz-transition: all 500ms ease-in-out;
-  -o-transition: all 500ms ease-in-out;
-  -webkit-transition: all 500ms ease-in-out;
 }
 
 #nav-toggle.active span {
@@ -210,7 +190,7 @@ nav.scroll {
 
 #nav-toggle.active span:before, #nav-toggle.active span:after {
   background-color: #222222;
-  top: 10px;
+  top: 0.6em;
 }
 
 #nav-toggle.active span:before {
@@ -220,8 +200,6 @@ nav.scroll {
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
-
-
 
 
 
@@ -239,8 +217,6 @@ nav.scroll {
 	position: fixed;
 	display: none;
 }
-
-
 
 
 
@@ -326,7 +302,7 @@ ul.sectionlist {
     padding: 0;
     float: left;
     text-align: center;
-    list-style-type: none;        
+    list-style-type: none;
 }
 
 ul.sectionlist li {
@@ -361,7 +337,7 @@ span.text-content {
     transition: opacity 500ms;
     -o-transition: opacity 500ms;
     -moz-transition: opacity 500ms;
-    -webkit-transition: opacity 500ms;    
+    -webkit-transition: opacity 500ms;
 }
 
 span.text-content span.span1 {
@@ -479,7 +455,7 @@ label, input {
         margin: 0;
         padding: 0;
         float: left;
-        list-style-type: none;        
+        list-style-type: none;
         text-align: center;
     }
 
@@ -547,13 +523,15 @@ label, input {
 		opacity: 1;
 		background-color: #222222;
 		transition: 1s all;
-	   -moz-transition: 1s all;
-	   -o-transition: 1s all;
-	   -webkit-transition: 1s all;
 	}
 
 	nav ul {
-		margin-top: 0;
+        top: 0;
+        left: 0;
+    	position: relative;
+        transform: translate(0);
+        text-align: center;
+    	list-style-type: none;
 	}
 
 	nav ul li {
