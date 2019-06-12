@@ -49,6 +49,8 @@ header.scroll {
 main {
     width: 100%;
     padding-top: 3.4em;
+    padding-left: 5%;
+    padding-right: 5%;
     position: relative;
 }
 
@@ -221,13 +223,9 @@ nav.scroll {
 
 
 /* ---------- BLOG ---------- */
-#two {
-    padding: 1% 0 0 0;
-    text-align: center;
-}
 
 aside {
-    display: none;
+    border-top: 1px solid #222222;
 }
 
 .blogpost {
