@@ -350,23 +350,17 @@ figure img {
 
 
 /* ---------- CONTACT ---------- */
-#four {
-    padding-top: 1%;
-    padding-bottom: 40px;
-}
-
-form {
-	width: 90%;
-	margin-left: 5%;
+.contact {
+    padding-bottom: 3em;
 }
 
 .labelinput {
-	margin: 20px 0;
+	margin: 1.3em 0;
 }
 
 label, input {
 	width: 100%;
-	height: 30px;
+	height: 2em;
 	display: block;
 	text-align: center;
 }
