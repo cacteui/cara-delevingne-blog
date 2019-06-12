@@ -47,11 +47,14 @@ header.scroll {
 
 /* Main and Section */
 main {
-    width: 100%;
     padding-top: 3.4em;
+    width: 100%;
+    position: relative;
+}
+
+article {
     padding-left: 5%;
     padding-right: 5%;
-    position: relative;
 }
 
 /* Headings */
@@ -330,8 +333,8 @@ span.gallery-title {
 
 
 /* ---------- GALLERY SECTION PAGES ---------- */
-#subthree {
-	padding-top: 50px;
+article.galleries {
+    padding: 0;
 }
 
 figure {
@@ -342,17 +345,7 @@ figure {
 
 figure img {
 	max-width: 100%;
-	float: left;
 }
-
-#arrow {
-		visibility: hidden;
-    	width: 3%;
-    	position: absolute;
-    	margin: 12px 0 0 15px;
-    }
-
-
 
 
 
