@@ -1,9 +1,5 @@
 /* ---------- FONTS ---------- */
-@font-face {
-    font-family: font1;
-    src: url(../other/font1.ttf);
-}
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
 
 
 /* ---------- GENERAL ---------- */
@@ -60,19 +56,19 @@ article {
 /* Headings */
 h1 {
 	margin: 0.5em;
-	font-family: 'font1';
+	font-family: 'Raleway', sans-serif;
 	font-size: 1.5em;
 	color: #ffffff;
-    font-weight: bold;
+    font-weight: 300;
 	text-transform: uppercase;
 }
 
 h2 {
     margin: 1em 0;
-    font-family: 'font1';
+    font-family: 'Raleway', sans-serif;
     font-size: 1.9em;
     color: #222222;
-    font-weight: bold;
+    font-weight: 300;
     text-align: center;
     text-transform: uppercase;
 }
@@ -88,10 +84,10 @@ footer {
 
 footer p {
 	padding: 0.5em 0 0.2em 0;
-	font-family: 'font1';
+	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 	color: #ffffff;
-	font-weight: bold;
+	font-weight: 300;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -128,9 +124,9 @@ nav ul {
 nav ul li {
 	margin: 1em 0;
 	display: block;
-	font-family: 'font1';
+	font-family: 'Raleway', sans-serif;
 	font-size: 2em;
-	font-weight: bold;
+	font-weight: 300;
     text-align: center;
 	text-transform: uppercase;
 }
@@ -263,8 +259,8 @@ h2.blog-title {
 
 .blogpost a:link, .blogpost a:visited {
     padding: 0.8em;
-    font-family: 'font1';
-    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
     color: #ffffff;
     text-decoration: none;
     background-color: #990000;
@@ -318,11 +314,10 @@ span.gallery-title {
     left: 0;
     right: 0;
     position: absolute;
-    font-family: 'font1', sans-serif;
-    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
     color: #2a2a2a;
     font-size: 2.3em;
-    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     background: rgba(255,255,255,0.7);
@@ -379,7 +374,7 @@ label, input {
 #submitbutton {
 	height: 40px;
 	margin-bottom: 0;
-	font-family: 'font1';
+	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -550,9 +545,9 @@ label, input {
 
     aside h3 {
         margin: 20px 0;
-        font-family: 'font1';
+        font-family: 'Raleway', sans-serif;
         font-size: 20px;
-        font-weight: bold;
+        font-weight: 300;
         color: #990000;
         text-align: center;
         text-transform: uppercase;
