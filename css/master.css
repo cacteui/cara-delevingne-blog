@@ -277,6 +277,7 @@ h2.blog-title {
 }
 
 aside {
+    margin: 0 5%;
     padding-bottom: 2em;
     border-top: 1px solid #222222;
 }
@@ -456,10 +457,15 @@ label, input {
 	}
 
 	h1 {
+        margin-top: 5px;
 		text-align: center;
 		font-size: 35px;
 		color: #222222;
 	}
+
+    article {
+        margin-top: 6em;
+    }
 
 
 	/* HOME */
@@ -493,7 +499,7 @@ label, input {
 	}
 
 	nav ul li {
-		margin: 12px 6%;
+		margin: 10px 6%;
 		display: inline-block;
 		font-size: 22px;
 	}
