@@ -18,12 +18,12 @@ window.onscroll = function() {
 
 function myScroll() {
 	if (document.body.scrollTop || document.documentElement.scrollTop > 10) {
-		document.querySelector("header.scrollable").classList.add("scroll");
-		document.querySelector("nav.scrollable").classList.add("scroll");
-		document.querySelector("footer.scrollable").classList.add("scroll");
+		document.querySelector("header").classList.add("scroll");
+		document.querySelector("nav").classList.add("scroll");
+		document.querySelector("footer").classList.add("scroll");
 	} else {
-		document.querySelector("header.scrollable").classList.remove("scroll");
-		document.querySelector("nav.scrollable").classList.remove("scroll");
-		document.querySelector("footer.scrollable").classList.remove("scroll");
+		document.querySelector("header").classList.remove("scroll");
+		document.querySelector("nav").classList.remove("scroll");
+		document.querySelector("footer").classList.remove("scroll");
 	}
 };
