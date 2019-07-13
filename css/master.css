@@ -516,20 +516,25 @@ label, input {
 
 
 	/* BLOG */
-	#two {
+    main.blog {
+        display: flex;
+        flex-direction: row;
+    }
+	.blogposts {
         width: 70%;
-        padding-top: 4%;
     }
 
-    .blogpost {
-        float: left;
+    p.blog-date {
+        margin-top: 0;
     }
 
 	aside {
         width: 25%;
         padding-right: 3%;
+        margin-top: 3em;
         float: right;
         display: block;
+        border: none;
     }
 
     aside h2 {
